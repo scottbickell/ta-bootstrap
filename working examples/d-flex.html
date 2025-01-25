@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bootstrap 4 Flexbox Demo</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<style>
+		.box {
+			padding: 20px;
+			color: white;
+			text-align: center;
+			font-size: 18px;
+		}
+	</style>
+</head>
+
+<body class="container mt-4">
+
+	<h2 class="mb-3">Flexbox in Bootstrap 4</h2>
+
+	<!-- Basic Flexbox -->
+	<h4>1. Basic .d-flex (Row Layout)</h4>
+	<div class="d-flex">
+		<div class="box bg-primary">Item 1</div>
+		<div class="box bg-secondary">Item 2</div>
+		<div class="box bg-success">Item 3</div>
+	</div>
+
+	<!-- Centering Items -->
+	<h4 class="mt-4">2. Centering with justify-content-center</h4>
+	<div class="d-flex justify-content-center">
+		<div class="box bg-danger">Centered Item</div>
+	</div>
+
+	<!-- Align Items Vertically -->
+	<h4 class="mt-4">3. Vertical Centering with align-items-center</h4>
+	<div class="d-flex align-items-center" style="height: 150px; background: lightgray;">
+		<div class="box bg-warning">Vertically Centered</div>
+	</div>
+
+	<!-- Column Layout -->
+	<h4 class="mt-4">4. Column Layout with .flex-column</h4>
+	<div class="d-flex flex-column">
+		<div class="box bg-info">Item 1</div>
+		<div class="box bg-dark">Item 2</div>
+	</div>
+
+	<!-- Reordering -->
+	<h4 class="mt-4">5. Reordering with .order-*</h4>
+	<div class="d-flex">
+		<div class="box bg-primary order-2">Second</div>
+		<div class="box bg-secondary order-1">First</div>
+		<div class="box bg-success order-3">Third</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
