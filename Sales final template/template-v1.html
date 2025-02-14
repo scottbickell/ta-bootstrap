@@ -5,6 +5,10 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400;1,700&display=swap"
+		rel="stylesheet">
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
@@ -13,17 +17,33 @@
 	<style>
 		body {
 			background-color: #efefef;
+			font-size: 1.1rem;
+			line-height: 1.3;
+			font-family: 'Open Sans', sans-serif;
 		}
 
+		h1 {
+			font-size: 3rem;
+			font-weight: bold;
+		}
+
+		h3 {
+			font-size: 1.5rem;
+			font-weight: bold;
+		}
+
+
+
 		.container {
-			padding-left: 80px;
-			padding-right: 80px;
+			padding-left: 70px;
+			padding-right: 70px;
 			background-color: #ffffff;
 		}
 
 		a.cta {
 			color: #fe5000;
 			font-weight: bold;
+			text-transform: uppercase;
 		}
 
 		a.cta:hover,
@@ -49,22 +69,88 @@
 			padding-top: .6rem;
 		}
 
+		/* .card {
+                                                box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px 0px, rgba(0, 0, 0, 0.1) 0px 6px 10px 0px;
+                                } */
+
 		.callout a {
 			color: #ffffff;
 			font-weight: bold;
 			text-decoration: none;
 		}
 
-		.callout a:hover, a:active {
+		.col-md-6 {
+			padding-top: 2rem;
+
+		}
+
+
+
+
+		.callout a:hover,
+		a:active {
 			border-bottom: 1px solid #ffffff;
 		}
 
-		.no-padding {
-			padding: 0;
+		.no-padding-l-r {
+			padding-left: 0;
+			padding-right: 0;
 		}
+
 		.py-4-5 {
 			padding-top: 2rem !important;
 			padding-bottom: 2rem !important;
+		}
+
+		.disclosure-footer {
+			background-color: #281805;
+			color: #ffffff;
+			font-size: .9rem;
+		}
+
+		.disclosure-footer p {
+			margin-bottom: 0.5rem;
+		}
+
+		@media only screen and (max-width: 768px) {
+			.mobile-hidden {
+				display: none !important;
+			}
+
+			.row-bottom-padding {
+				padding-bottom: 0;
+			}
+
+			.container {
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+
+			/* add more specific column definitions here to enforce padding on mobile */
+
+			.col-md-6,
+			.col {
+				margin-top: 10px;
+			}
+
+			.callout {
+				padding: 10px;
+				`
+			}
+
+			.callout h2 {
+				font-size: 1.6rem;
+			}
+
+			.callout p {
+				font-size: 1.2rem;
+				margin-bottom: 0;
+			}
+
+			.container.no-padding-l-r {
+				padding-left: 0;
+				padding-right: 0;
+			}
 		}
 	</style>
 
@@ -81,35 +167,35 @@
 					alt="logos" class="img-fluid" width="500"></div>
 		</div>
 	</div>
-	<div class="container no-padding">
+	<div class="container no-padding-l-r">
 		<div class="row">
 			<div class="col">
-				<div id="fancy-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+				<div id="fancy-carousel" class="carousel slide carousel-slide" data-ride="carousel">
 					<ol class="carousel-indicators">
-						<li data-target="#fancy-carousel" data-slide-to="0" class="">
+						<li data-target="#fancy-carousel" data-slide-to="0" class="active">
 						</li>
 						<li data-target="#fancy-carousel" data-slide-to="1" class="">
 						</li>
-						<li data-target="#fancy-carousel" data-slide-to="2" class="active">
+						<li data-target="#fancy-carousel" data-slide-to="2" class="">
 						</li>
 						<li data-target="#fancy-carousel" data-slide-to="3" class="">
 						</li>
 					</ol>
 					<div class="carousel-inner">
 						<div class="carousel-item">
-							<img src="http://image.email.transamerica.com/lib/fe9415747d6c047b75/m/1/d37b2284-5c45-4452-89a3-3bc8dd9264d5.jpg"
+							<img src="http://image.email.transamerica.com/lib/fe9415747d6c047b75/m/1/a42e0a1f-95f1-4c27-b4ab-9a1d43761c72.png"
 								class="d-block w-100 img-fluid" alt="img 1">
 						</div>
 						<div class="carousel-item">
-							<img src="http://image.email.transamerica.com/lib/fe9415747d6c047b75/m/1/9dd5d1e3-8034-4ded-9dc0-354cf082d842.jpg"
+							<img src="http://image.email.transamerica.com/lib/fe9415747d6c047b75/m/1/a42e0a1f-95f1-4c27-b4ab-9a1d43761c72.png"
 								class="d-block w-100 img-fluid" alt="img 2">
 						</div>
 						<div class="carousel-item active">
-							<img src="http://image.email.transamerica.com/lib/fe9415747d6c047b75/m/1/9b531ebb-8ff8-4932-a0e0-8c65e914f0c7.jpg"
+							<img src="http://image.email.transamerica.com/lib/fe9415747d6c047b75/m/1/a42e0a1f-95f1-4c27-b4ab-9a1d43761c72.png"
 								class="d-block w-100 img-fluid" alt="img 3">
 						</div>
 						<div class="carousel-item">
-							<img src="http://image.email.transamerica.com/lib/fe9415747d6c047b75/m/1/9e94ddfe-f0fd-4b39-ac61-c809a40fd6fa.jpg"
+							<img src="http://image.email.transamerica.com/lib/fe9415747d6c047b75/m/1/a42e0a1f-95f1-4c27-b4ab-9a1d43761c72.png"
 								class="d-block w-100 img-fluid" alt="img 3">
 						</div>
 					</div>
@@ -120,100 +206,228 @@
 	<div class="container">
 		<div class="row">
 			<div class="col mt-4 mb-3">
-					<h1>Creating brighter retirement outcomes</h1>
-					<p>After forging a new partnership with One Brooklyn Health in 2024, we’re looking forward to more great
-						things in the year ahead. Our experience with defined contribution and defined benefit plans allows
-						us to provide <em>Total Retirement Outsourcing</em><sup>®</sup> for your retirement program. See how
-						Transamerica allows you to harness the power and convenience of one plan provider. </p>
+				<h1>Forging brighter retirement outcomes</h1>
+				<p>As your hardworking employees pursue meaningful careers, we want to ensure they also enjoy a
+					financially secure future. Working closely with North American Stainless, we’ll strive to provide
+					tools, resources, and professional support designed to help them live their best lives. Your plan is
+					our purpose. Your people are our focus. Let’s make this happen together!</p>
 			</div>
 		</div>
 	</div>
-	<div class="container no-padding">
+	<div class="container no-padding-l-r">
 		<div class="d-flex justify-content-center align-items-center callout py-4-5">
 			<h2>Your plan. Our purpose.</h2>
 		</div>
 	</div>
 	<div class="container">
-		<div class="row" style="padding-top:2rem;">
+		<div class="row">
+			<!-- column 1 -->
 			<div class="col-md-6">
 				<div class="card d-flex flex-column h-100">
-					<img src="http://image.email.transamerica.com/lib/fe9415747d6c047b75/m/1/f404fe99-ac6e-4138-b9fb-bd30ae4ae458.jpg"
+					<img src="http://image.email.transamerica.com/lib/fe9415747d6c047b75/m/1/44141e43-de0a-413b-a176-4b0cef28882e.png"
 						alt="image" class="img-fluid">
 					<div class="card-body d-flex flex-column">
-						<h3 class="card-title">Dedicated to One Brooklyn Health</h3>
-						<p class="card-text">For a detailed look at how we’ll serve you and your employees across all
-							plans, here’s a copy of our presentation.</p>
-						<a href="https://cdn.bfldr.com/86JM1UOD/as/4bfhw6xx4j775s5rh8t5sf/4120298_One_Brooklyn_Health_DB_Presentation"
-							class="mt-auto cta">DOWNLOAD PRESENTATION &rarr;</a>
+						<h3 class="card-title">Dedicated to NAS</h3>
+						<p class="card-text">For a detailed look at how we’ll serve you and your employees, here’s a
+							copy of our presentation. Thanks for the opportunity to share our vision and answer your
+							questions.</p>
+						<a href="x" class="mt-auto cta">DOWNLOAD PRESENTATION &rarr;</a>
 					</div>
 				</div>
 			</div>
 
+
+			<!-- col 2 -->
 			<div class="col-md-6">
 				<div class="card d-flex flex-column h-100">
-					<img src="http://image.email.transamerica.com/lib/fe9415747d6c047b75/m/1/67120b4c-2945-419f-a6d8-cc9c30b7699a.jpg"
+					<img src="http://image.email.transamerica.com/lib/fe9415747d6c047b75/m/1/44141e43-de0a-413b-a176-4b0cef28882e.png"
 						alt="image" class="img-fluid">
 					<div class="card-body d-flex flex-column">
-						<h3 class="card-title">Column 2</h3>
-						<p class="card-text">Some content here Lorem ipsum dolor sit amet consectetur adipisicing
-							elit. Assumenda eos, asperiores maiores enim esse quaerat laboriosam rem quia neque
-							quidem, rerum, odit fugiat obcaecati praesentium et aspernatur nesciunt quibusdam
-							accusamus!</p>
-						<a href="#" class="mt-auto">Call to Action</a>
+						<h3 class="card-title"> A team in your corner</h3>
+						<p class="card-text">From your executive contact to your communications manager, Transamerica’s
+							service team will be dedicated to NAS and committed to service excellence.</p>
+						<a href="#" class="mt-auto cta">Call to Action &rarr;</a>
+					</div>
+				</div>
+			</div>
+
+
+
+			<!-- col 3 -->
+			<div class="col-md-6">
+				<div class="card d-flex flex-column h-100">
+					<img src="http://image.email.transamerica.com/lib/fe9415747d6c047b75/m/1/44141e43-de0a-413b-a176-4b0cef28882e.png"
+						alt="image" class="img-fluid">
+					<div class="card-body d-flex flex-column">
+						<h3 class="card-title">Custom participant communications</h3>
+						<p class="card-text">With an award-winning track record, we create custom campaigns to help NAS
+							employees make the most of your retirement plan.</p>
+						<a href="https://cdn.bfldr.com/86JM1UOD/as/4bfhw6xx4j775s5rh8t5sf/4120298_One_Brooklyn_Health_DB_Presentation"
+							class="mt-auto cta">GET READY TO RETIRE &rarr;</a>
+						<a href="https://cdn.bfldr.com/86JM1UOD/as/4bfhw6xx4j775s5rh8t5sf/4120298_One_Brooklyn_Health_DB_Presentation"
+							class="mt-auto cta">BENEFICIARY &rarr;</a>
+					</div>
+				</div>
+			</div>
+
+
+
+			<!-- col 4 -->
+			<div class="col-md-6">
+				<div class="card d-flex flex-column h-100">
+					<img src="http://image.email.transamerica.com/lib/fe9415747d6c047b75/m/1/44141e43-de0a-413b-a176-4b0cef28882e.png"
+						alt="image" class="img-fluid">
+					<div class="card-body d-flex flex-column">
+						<h3 class="card-title">Transition = opportunity </h3>
+						<p class="card-text">With thousands of successful plan transitions under our belt, we make the
+							experience as seamless as possible and keep you informed every step of the way.</p>
+						<a href="#" class="mt-auto cta">TRANSITION PROJECT PLAN &rarr;</a>
+					</div>
+				</div>
+			</div>
+
+
+
+			<!-- col 5 -->
+			<div class="col-md-6">
+				<div class="card d-flex flex-column h-100">
+					<img src="http://image.email.transamerica.com/lib/fe9415747d6c047b75/m/1/44141e43-de0a-413b-a176-4b0cef28882e.png"
+						alt="image" class="img-fluid">
+					<div class="card-body d-flex flex-column">
+						<h3 class="card-title">Award-winning digital experience</h3>
+						<p class="card-text">From checking balances to adjusting contribution rates, participants can
+							use our website or app to manage their retirement account anytime, anywhere.
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						<a href="#" class="mt-auto cta">PARTICIPANT WEBSITE VIDEO &rarr;</a>
+						<a href="#" class="mt-auto cta">MOBILE APP VIDEO &rarr;</a>
+					</div>
+				</div>
+			</div>
+
+
+
+			<!-- col 6 -->
+			<div class="col-md-6">
+				<div class="card d-flex flex-column h-100">
+					<img src="http://image.email.transamerica.com/lib/fe9415747d6c047b75/m/1/44141e43-de0a-413b-a176-4b0cef28882e.png"
+						alt="image" class="img-fluid">
+					<div class="card-body d-flex flex-column">
+						<h3 class="card-title">Safeguarding sensitive information</h3>
+						<p class="card-text">Transamerica’s Information Security Program is a continuous cycle guided by
+							our values, business principles, client needs, and emerging security requirements.</p>
+						<a href="#" class="mt-auto cta">DOWNLOAD FLYER &rarr;</a>
+						<a href="#" class="mt-auto cta">VISIT OUR SECURITY PAGE &rarr;</a>
+					</div>
+				</div>
+			</div>
+
+
+
+			<!-- col 7 -->
+			<div class="col-md-6">
+				<div class="card d-flex flex-column h-100">
+					<img src="http://image.email.transamerica.com/lib/fe9415747d6c047b75/m/1/44141e43-de0a-413b-a176-4b0cef28882e.png"
+						alt="image" class="img-fluid">
+					<div class="card-body d-flex flex-column">
+						<h3 class="card-title">Lean on our experience</h3>
+						<p class="card-text">Recognizing the unique challenges manufacturing companies face, we use our
+							knowledge to build a customized retirement plan that meets your needs. </p>
+						<a href="#" class="mt-auto cta">SEE OUR CAPABILITIES &rarr;</a>
+						<a href="#" class="mt-auto cta">NQDC CASE STUDY &rarr;</a>
+						<a href="#" class="mt-auto cta">M&amp;A CASE STUDY &rarr;</a>
+					</div>
+				</div>
+			</div>
+
+
+
+			<!-- col 8 -->
+			<div class="col-md-6">
+				<div class="card d-flex flex-column h-100">
+					<img src="http://image.email.transamerica.com/lib/fe9415747d6c047b75/m/1/44141e43-de0a-413b-a176-4b0cef28882e.png"
+						alt="image" class="img-fluid">
+					<div class="card-body d-flex flex-column">
+						<h3 class="card-title">Service excellence and awards</h3>
+						<p class="card-text">Delivering outstanding customer service and helping plan sponsors succeed
+							is part of our job. Being recognized for our work is a nice bonus.</p>
+						<a href="#" class="mt-auto cta">DOWNLOAD FLYER &rarr;</a>
+					</div>
+				</div>
+			</div>
+			<!-- col 9 -->
+			<div class="col-md-6">
+				<div class="card d-flex flex-column h-100">
+					<img src="http://image.email.transamerica.com/lib/fe9415747d6c047b75/m/1/44141e43-de0a-413b-a176-4b0cef28882e.png"
+						alt="image" class="img-fluid">
+					<div class="card-body d-flex flex-column">
+						<h3 class="card-title">Service excellence and awards</h3>
+						<p class="card-text">Delivering outstanding customer service and helping plan sponsors succeed
+							is part of our job. Being recognized for our work is a nice bonus.</p>
+						<a href="#" class="mt-auto cta">DOWNLOAD FLYER &rarr;</a>
+					</div>
+				</div>
+			</div>
+			<!-- col 10 -->
+			<div class="col-md-6">
+				<div class="card d-flex flex-column h-100">
+					<img src="http://image.email.transamerica.com/lib/fe9415747d6c047b75/m/1/44141e43-de0a-413b-a176-4b0cef28882e.png"
+						alt="image" class="img-fluid">
+					<div class="card-body d-flex flex-column">
+						<h3 class="card-title">Service excellence and awards</h3>
+						<p class="card-text">Delivering outstanding customer service and helping plan sponsors succeed
+							is part of our job. Being recognized for our work is a nice bonus.</p>
+						<a href="#" class="mt-auto cta">DOWNLOAD FLYER &rarr;</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="container">
-		<div class="row" style="padding-top:2rem;">
-			<div class="col-md-6">
-				<div class="card d-flex flex-column h-100">
-					<img src="http://image.email.transamerica.com/lib/fe9415747d6c047b75/m/1/f404fe99-ac6e-4138-b9fb-bd30ae4ae458.jpg"
-						alt="image" class="img-fluid">
-					<div class="card-body d-flex flex-column">
-						<h3 class="card-title">Dedicated to One Brooklyn Health</h3>
-						<p class="card-text">For a detailed look at how we’ll serve you and your employees across all
-							plans, here’s a copy of our presentation.</p>
-						<a href="https://cdn.bfldr.com/86JM1UOD/as/4bfhw6xx4j775s5rh8t5sf/4120298_One_Brooklyn_Health_DB_Presentation"
-							class="mt-auto cta">DOWNLOAD PRESENTATION &rarr;</a>
-					</div>
-				</div>
-			</div>
 
-			<div class="col-md-6">
-				<div class="card d-flex flex-column h-100">
-					<img src="http://image.email.transamerica.com/lib/fe9415747d6c047b75/m/1/67120b4c-2945-419f-a6d8-cc9c30b7699a.jpg"
-						alt="image" class="img-fluid">
-					<div class="card-body d-flex flex-column">
-						<h3 class="card-title">Column 2</h3>
-						<p class="card-text">Some content here Lorem ipsum dolor sit amet consectetur adipisicing
-							elit. Assumenda eos, asperiores maiores enim esse quaerat laboriosam rem quia neque
-							quidem, rerum, odit fugiat obcaecati praesentium et aspernatur nesciunt quibusdam
-							accusamus!</p>
-						<a href="#" class="mt-auto">Call to Action</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="row justify-content-center" style="padding-top:2rem;">
-        <div class="col-md-6">
-            <div class="card d-flex flex-column h-100">
-                <img src="http://image.email.transamerica.com/lib/fe9415747d6c047b75/m/1/some-image.jpg"
-                    alt="image" class="img-fluid">
-                <div class="card-body d-flex flex-column">
-                    <h3 class="card-title">Centered Column</h3>
-                    <p class="card-text">This new column is centered below the two above.</p>
-                    <a href="#" class="mt-auto">Call to Action</a>
-                </div>
-            </div>
-        </div>
-    </div>
-	<div class="container no-padding">
+
+
+
+
+	<!-- single row needs a new container for now -->
+	<!-- <div class="container">
+                                <div class="row justify-content-center">
+                                                <div class="col-md-6">
+                                                                <div class="card d-flex flex-column h-100">
+                                                                                <img src="http://image.email.transamerica.com/lib/fe9415747d6c047b75/m/1/44141e43-de0a-413b-a176-4b0cef28882e.png"
+                                                                                                alt="image" class="img-fluid">
+                                                                                <div class="card-body d-flex flex-column">
+                                                                                                <h3 class="card-title">Centered Column</h3>
+                                                                                                <p class="card-text">This new column is centered below the two above.</p>
+                                                                                                <a href="#" class="mt-auto cta">Call to Action &rarr;</a>
+                                                                                </div>
+                                                                </div>
+                                                </div>
+                                </div>
+                </div> -->
+
+	<div class="container no-padding-l-r" style="padding-top:2rem;">
 		<div class="d-flex flex-column justify-content-center align-items-center callout py-4-5">
-			<h2>Keep the conversation going.</h2>
-			<p>Contact Frank Castellvi at 201-739-6594 or <a href="mailto:frank.castellvi@transamerica.com">frank.castellvi@transamerica.com</a>.</p>
+			<h2 style="text-align:center;">Keep the conversation going.</h2>
+			<p style="text-align:center;">Contact Lizzie Moye at <a
+					href="tel:18022383184"><strong>802-238-3184</strong></a> or <a
+					href="mailto:lizzie.moye@transamerica.com">lizzie.moye@transamerica.com</a>.</p>
+		</div>
+	</div>
+	<div class="container no-padding-l-r">
+		<div class="d-flex flex-column justify-content-center align-items-center">
+			<img src="http://image.email.transamerica.com/lib/fe9415747d6c047b75/m/1/7cdd3f0d-7605-4879-b51f-adf12db27061.png"
+				class="img-fluid" width="300" alt="">
+		</div>
+	</div>
+	<div class="container disclosure-footer">
+		<div class="row">
+			<div class="col mt-4 mb-3">
+				<p>Securities offered through Transamerica Investors Securities, LLC, member FINRA, 440 Mamaroneck
+					Avenue, Harrison, NY 10528. All Transamerica companies identified are affiliated.</p>
+
+				<p>RS3 4192708 S 02/25</p>
+
+				<po>© 2025 Transamerica Corporation. All Rights Reserved.</po>
+			</div>
 		</div>
 	</div>
 
